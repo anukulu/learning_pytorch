@@ -13,8 +13,8 @@ class InventoryEnv(gym.Env):
         #Space type : Better to use Box than Discrete since Discrete will lead to too many output nodes in the NN 
         # Shape : rllib cannot handle scalar actions, so turn it into a numpy array
         self.action_space = gym.spaces.Box(low=np.array([0]), high=np.array([self.max_cap]))
-        #Observation Space : bounds, space type and shape
-
+        #Observation Space (state space) : bounds, space type and shape
+        
         #
         pass
 
